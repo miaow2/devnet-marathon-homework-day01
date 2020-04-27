@@ -1,0 +1,7 @@
+- host: 2.2.2.2
+  port: 22
+  auth_username: cisco
+  auth_password: cisco
+  transport: ssh2
+  ssh_config_file: False
+  auth_strict_key: False

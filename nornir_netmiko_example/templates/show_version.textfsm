@@ -1,0 +1,9 @@
+Value SOFTWARE (.+?)
+Value VERSION (.+?)
+Value HOSTNAME (\S+)
+Value HARDWARE (\S+)
+
+Start
+  ^.*Software\s+\(${SOFTWARE}\),\s+Version\s+${VERSION},*\s+RELEASE.*
+  ^\s*${HOSTNAME}\s+uptime\s+is
+  ^[Cc]isco\s+${HARDWARE}\s+\(
